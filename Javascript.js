@@ -351,4 +351,25 @@ var x=--a;
 console.log('increment with assignment',x);
 console.log('increment with assignment',a);
 
+        function operatorFun(a){
+            var value1=document.getElementById("v1").value;
+            var value2=document.getElementById("v2").value;
+            value1=Number(value1);
+            value2=Number(value2);
+    
+            switch(a){
+                case '+':
+                document.getElementById("result").innerHTML=  value1 + value2;
+                break;
+                case '-':
+                document.getElementById("result").innerHTML=  value1 - value2;
+                break;
+                case '*':
+                document.getElementById("result").innerHTML=  value1 * value2;
+                break;
+                case '/':
+                document.getElementById("result").innerHTML=  value1 / value2;
+                break;
 
+            }
+        }
